@@ -1,14 +1,30 @@
 import React from "react";
 import "./style.css";
 
+// function shuffleArray(array) {
+//   let i = array.length - 1;
+//   for (; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     const temp = array[i];
+//     array[i] = array[j];
+//     array[j] = temp;
+//   }
+//   return array;
+// };
+
+// var shuffledAlbums = shuffleArray(this.state.albums)
+// handleIncrement = () => {
+
+//   this.setState({ count: this.state.count + 1 });
+// };
+
+
 function AlbumCard(props) {
   return (
-    <div className="card">
+    <div className="card" onClick={props.handleClick}>
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
-      {/* <span onClick={() => props.removeFriend(props.id)} className="remove">
-      </span> */}
     </div>
   );
 }
