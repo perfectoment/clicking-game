@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AlbumCard from "./components/AlbumCard";
 import Wrapper from "./components/Wrapper";
+import Counter from "./components/Counter";
 import Title from "./components/Title";
 import albums from "./albums.json"
 
@@ -10,7 +11,9 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     albums: albums,
-    results: [],
+    newArray: [],
+    score: 0,
+    highscore: 0,
     
   };
 
@@ -26,11 +29,27 @@ class App extends Component {
   };
 
   shuffleAlbums =() => {
-    this.setState(this.state.albums = this.shuffleArray(this.state.albums))
+    const mixedAlbums = this.shuffleArray(this.state.albums)
+    this.setState({albums: mixedAlbums})
   }
 
-  handleClick = event => {
+  handleClick = id => {
   this.shuffleAlbums()
+  this.scoreKeeper(id)
+  };
+
+
+  scoreKeeper = id => {
+   const holdingTank = this.state.newArray
+   const newScore = this.state.score
+    if(holdingTank.indexOf(id) === -1){
+      holdingTank.push(id);
+    };
+    this.setState(
+      {
+        score: newScore +1,
+        newArray:holdingTank
+      })
   };
 
 
@@ -38,6 +57,10 @@ render() {
   return (
     <Wrapper>
       <Title>Black Metal Album Covers</Title>
+      <Counter
+        score={this.state.score}
+        highscore={this.state.highscore}
+      /> 
       {this.state.albums.map(album => (
         <AlbumCard
           handleClick={this.handleClick}
