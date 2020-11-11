@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Dark Throne",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/51735-a-blaze-in-the-northern-sky.jpg"
+    
+    },
+    {
+      "id": 2,
+      "name": "Deaf Haven",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/2015/37673-new-bermuda.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ulver",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/41088-bergtatt.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Wolves in the Throne Room",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/celestial-lineage.jpg"
+    
+    },
+    {
+      "id": 5,
+      "name": "Krallice",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/95100-go-be-forgotten.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Woods of Desolation",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/2014/12898-as-the-stars.jpg"
+
+    },
+    {
+      "id": 7,
+      "name": "Liturgy",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/aesthethica.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Drudkh",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/eternal-turn-of-the-wheel.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Blut Aus Nord",
+      "image": "https://cdn2.albumoftheyear.org/400x/album/2014/19718-memoria-vetusta-iii--saturnian-poetry.jpg"
+    }
+]

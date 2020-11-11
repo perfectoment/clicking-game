@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import AlbumCard from "./components/AlbumCard";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import albums from "./albums.json"
 
-function App() {
+function shuffleArray(array) {
+  let i = array.length - 1;
+  for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+
+class App extends Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    albums: albums
+  };
+
+
+
+render() {
+  const shuffledalbums = shuffleArray(this.props.posts);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Title>Black Metal Album Covers</Title>
+      {this.state.albums.map(album => (
+        <AlbumCard
+          removeFriend={this.removeFriend}
+          id={album.id}
+          key={album.id}
+          name={album.name}
+          image={album.image}
+        />
+      ))}
+    </Wrapper>
   );
 }
+
 
 export default App;
