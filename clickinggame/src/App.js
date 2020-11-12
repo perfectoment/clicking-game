@@ -59,7 +59,7 @@ class App extends Component {
         };
       this.setState({
         score:0,
-        newArray: []
+        newArray:[]
       })
     }
   };
@@ -68,7 +68,7 @@ class App extends Component {
 render() {
   return (
     <Wrapper>
-      <Title>Black Metal Album Covers</Title>
+      <Title>Black Metal Album Covers: The Game</Title>
       <Counter
         score={this.state.score}
         highscore={this.state.highscore}
