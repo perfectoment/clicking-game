@@ -40,16 +40,27 @@ class App extends Component {
 
 
   scoreKeeper = id => {
+  const highScore = this.state.highscore
    const holdingTank = this.state.newArray
    const newScore = this.state.score
     if(holdingTank.indexOf(id) === -1){
       holdingTank.push(id);
-    };
+    
     this.setState(
       {
         score: newScore +1,
         newArray:holdingTank
       })
+    } else {
+        if(newScore > highScore){
+          this.setState({
+            highscore: newScore,
+          })
+        };
+      this.setState({
+        score:0
+      })
+    }
   };
 
 
