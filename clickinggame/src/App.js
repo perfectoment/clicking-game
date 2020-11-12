@@ -58,7 +58,8 @@ class App extends Component {
           })
         };
       this.setState({
-        score:0
+        score:0,
+        newArray: []
       })
     }
   };
