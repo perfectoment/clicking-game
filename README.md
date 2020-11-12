@@ -4,7 +4,7 @@ Welcome to the most BRUTAL clicking game of them all! Built with React.js, this 
 
 ### Screenshots
 
-![Screenshot](clickinggame\public\blackmetal.PNG)
+![Screenshot](./clickinggame\public\blackmetal.PNG)
 
 ## Built With
 
