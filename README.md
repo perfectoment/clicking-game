@@ -14,13 +14,13 @@ Welcome to the most BRUTAL clicking game of them all! Built with React.js, this 
 
 ## Deployed Link
 
-* [See Live Site](https://gentle-shelf-67923.herokuapp.com/)
+* [See Live Site](https://perfectoment.github.io/clicking-game/)
 
 
 ## Author
 
 * **Ryan Nemec** 
 
-- [Link to Portfolio Site](https://perfectoment.github.io/Ryan-Portfolio/index.html)
+- [Link to Portfolio Site](https://gentle-shelf-67923.herokuapp.com/portfolio)
 - [Link to Github](https://github.com/perfectoment)
 - [Link to LinkedIn](https://www.linkedin.com/in/ryan-nemec-5a6b3a66/)
